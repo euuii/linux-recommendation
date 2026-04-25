@@ -61,11 +61,15 @@ header p {
 .filters {
   width: 240px;
   flex-shrink: 0;
+  align-self: flex-start;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.25rem;
-  height: fit-content;
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
 }
 
 .filters-header {
@@ -222,23 +226,7 @@ header p {
   font-family: var(--font-mono);
 }
 
-.website-btn {
-  display: inline-block;
-  align-self: flex-start;
-  background: var(--primary);
-  color: var(--bg);
-  font-family: var(--font-mono);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 0.6rem 1.25rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: filter 0.2s;
-}
 
-.website-btn:hover {
-  filter: brightness(1.15);
-}
 
 /* ===== Distro Grid ===== */
 .distro-grid {
@@ -328,14 +316,7 @@ header p {
   filter: brightness(1.15);
 }
 
-/* ===== Empty State ===== */
-.empty {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 4rem 1rem;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-}
+
 
 /* ===== Filter Links ===== */
 .filter-link {
