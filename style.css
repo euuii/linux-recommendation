@@ -27,12 +27,18 @@ body {
   color: var(--text);
   font-family: var(--font-sans);
   line-height: 1.6;
+  overflow: hidden;
+  height: 100vh;
 }
 
 /* ===== Header ===== */
 header {
   border-bottom: 1px solid var(--border);
   padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
 }
 
 header h1 {
@@ -97,6 +103,8 @@ header p {
   max-width: 860px;
   margin: 0 auto;
   padding: 1.5rem;
+  overflow-y: auto;
+  height: calc(100vh - 9rem);
 }
 
 .back-btn {
@@ -235,6 +243,8 @@ header p {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
   align-content: start;
+  overflow-y: auto;
+  height: calc(100vh - 9rem);
 }
 
 /* ===== Distro Card ===== */
@@ -332,3 +342,22 @@ header p {
 .filter-link:hover {
   color: var(--primary);
 }
+
+/*  Scrolbar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: var(--bg);
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+} */
