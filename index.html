@@ -3,15 +3,221 @@
 <head>
   <meta name="color-scheme" content="dark" />
   <meta charset="UTF-8" />
-  <title>Linux Distro Finder</title>
+  <title>All Distros</title>
   <style>
-    html, frameset, frame { background: #181c24; }
+    html, body { background: #181c24; color: #c8d6c8; }
   </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<frameset cols="*" rows="*" border="0">
-  <frame src="all.html" name="content" scrolling="auto" />
-  <noframes>
-    <p>Your browser does not support frames.</p>
-  </noframes>
-</frameset>
+<body>
+
+  <header>
+    <h1>$ Linux Distro Recommendation</h1>
+    <p>Find the perfect Linux distribution for your needs</p>
+  </header>
+
+  <div class="container">
+    <aside class="filters">
+      <div class="filters-header">
+        <h2>Filters</h2>
+      </div>
+
+      <div class="filter-group">
+        <h3>Browse</h3>
+        <a class="filter-link" href="index.html" target="_self">&gt; All Distros</a>
+      </div>
+
+      <div class="filter-group">
+        <h3>User Level</h3>
+        <a class="filter-link" href="beginner.html" target="_self">&gt; Beginner</a>
+        <a class="filter-link" href="advanced.html" target="_self">&gt; Advanced</a>
+      </div>
+
+      <div class="filter-group">
+        <h3>Purpose</h3>
+        <a class="filter-link" href="gaming.html" target="_self">&gt; Gaming</a>
+        <a class="filter-link" href="pentesting.html" target="_self">&gt; Pentesting</a>
+      </div>
+
+      <div class="filter-group">
+        <h3>System Specs</h3>
+        <a class="filter-link" href="lowspec.html" target="_self">&gt; Low Spec</a>
+      </div>
+    </aside>
+
+    <main class="distro-grid">
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/ubuntu-svgrepo-com.svg" alt="Ubuntu logo" />
+        <h3>Ubuntu</h3>
+      </div>
+      <p>The most popular Linux distro, great for beginners with a large community and extensive documentation.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: ubuntu</span></div>
+      <a href="distros/ubuntu-detail.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/linux-mint-svgrepo-com.svg" alt="Linux Mint logo" />
+        <h3>Linux Mint</h3>
+      </div>
+      <p>A user-friendly distro based on Ubuntu, featuring the Cinnamon desktop for a familiar experience.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">low-end</span><span class="tag tag--base">based on: ubuntu</span></div>
+      <a href="distros/linux-mint.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/arch-linux.svg" alt="Arch Linux logo" />
+        <h3>Arch Linux</h3>
+      </div>
+      <p>A lightweight, flexible distro for advanced users who want to build their system from scratch.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">rolling</span><span class="tag">general</span><span class="tag">low-end</span><span class="tag tag--base">based on: arch</span></div>
+      <a href="distros/arch-linux.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/fedora.svg" alt="Fedora logo" />
+        <h3>Fedora</h3>
+      </div>
+      <p>A cutting-edge distro sponsored by Red Hat, great for developers and desktop users alike.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: fedora</span></div>
+      <a href="distros/fedora.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/debian.svg" alt="Debian logo" />
+        <h3>Debian</h3>
+      </div>
+      <p>The universal operating system, rock-solid stability and one of the oldest active distros.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: debian</span></div>
+      <a href="distros/debian.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/manjaro.svg" alt="Manjaro logo" />
+        <h3>Manjaro</h3>
+      </div>
+      <p>An accessible Arch-based distro with a user-friendly installer and curated rolling updates.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">rolling</span><span class="tag">general</span><span class="tag">gaming</span><span class="tag">high-end</span><span class="tag tag--base">based on: arch</span></div>
+      <a href="distros/manjaro.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/kali-linux.svg" alt="Kali Linux logo" />
+        <h3>Kali Linux</h3>
+      </div>
+      <p>The go-to distro for penetration testing and security research, packed with hacking tools.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">rolling</span><span class="tag">pentesting</span><span class="tag">low-end</span><span class="tag tag--base">based on: debian</span></div>
+      <a href="distros/kali-linux.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/pop-os.svg" alt="Pop!_OS logo" />
+        <h3>Pop!_OS</h3>
+      </div>
+      <p>A developer and gamer-friendly distro by System76 with excellent GPU support out of the box.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">gaming</span><span class="tag">high-end</span><span class="tag tag--base">based on: ubuntu</span></div>
+      <a href="distros/pop-os.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/lubuntu.svg" alt="Lubuntu logo" />
+        <h3>Lubuntu</h3>
+      </div>
+      <p>A lightweight Ubuntu variant using LXQt, perfect for older or low-spec hardware.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">low-end</span><span class="tag tag--base">based on: ubuntu</span></div>
+      <a href="distros/lubuntu.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/parrotos.svg" alt="Parrot OS logo" />
+        <h3>Parrot OS</h3>
+      </div>
+      <p>A security-focused distro with a privacy-hardened environment, plus a lightweight Home edition for everyday use.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">rolling</span><span class="tag">pentesting</span><span class="tag">general</span><span class="tag">low-end</span><span class="tag tag--base">based on: debian</span></div>
+      <a href="distros/parrot-os.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/bazzite.svg" alt="Bazzite logo" />
+        <h3>Bazzite</h3>
+      </div>
+      <p>An immutable Fedora-based distro built for gaming, with day-one support for Steam Deck hardware and handhelds.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">rolling</span><span class="tag">gaming</span><span class="tag">high-end</span><span class="tag tag--base">based on: fedora</span></div>
+      <a href="distros/bazzite.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/cachyos.svg" alt="CachyOS logo" />
+        <h3>CachyOS</h3>
+      </div>
+      <p>A performance-tuned Arch-based distro using the BORE scheduler and optimized packages for maximum responsiveness.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">rolling</span><span class="tag">general</span><span class="tag">gaming</span><span class="tag">high-end</span><span class="tag tag--base">based on: arch</span></div>
+      <a href="distros/cachyos.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/solus.svg" alt="Solus logo" />
+        <h3>Solus</h3>
+      </div>
+      <p>An independent rolling distro built around the curated Budgie desktop, designed for home desktop use.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">rolling</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: independent</span></div>
+      <a href="distros/solus.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/elementaryos.svg" alt="elementary OS logo" />
+        <h3>elementary OS</h3>
+      </div>
+      <p>A polished, macOS-inspired distro focused on design and simplicity, ideal for users new to Linux.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: ubuntu</span></div>
+      <a href="distros/elementary-os.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/kdeneon.svg" alt="KDE Neon logo" />
+        <h3>KDE Neon</h3>
+      </div>
+      <p>Ubuntu LTS base shipping the latest stable KDE Plasma desktop straight from the KDE developers.</p>
+      <div class="tags"><span class="tag">beginner</span><span class="tag">stable</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: ubuntu</span></div>
+      <a href="distros/kde-neon.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/gentoo.svg" alt="Gentoo logo" />
+        <h3>Gentoo</h3>
+      </div>
+      <p>A source-based meta-distribution where you compile everything yourself for ultimate control and optimization.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">rolling</span><span class="tag">general</span><span class="tag">high-end</span><span class="tag tag--base">based on: independent</span></div>
+      <a href="distros/gentoo.html">View Details &rarr;</a>
+    </div>
+
+    <div class="distro-card">
+      <div class="distro-card-header">
+        <img class="distro-logo" src="logos/void.svg" alt="Void Linux logo" />
+        <h3>Void Linux</h3>
+      </div>
+      <p>An independent, musl-or-glibc rolling distro with the runit init system and a no-nonsense philosophy.</p>
+      <div class="tags"><span class="tag">advanced</span><span class="tag">rolling</span><span class="tag">general</span><span class="tag">low-end</span><span class="tag tag--base">based on: independent</span></div>
+      <a href="distros/void-linux.html">View Details &rarr;</a>
+    </div>
+    </main>
+  </div>
+
+</body>
 </html>
