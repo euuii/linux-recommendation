@@ -7,7 +7,7 @@ html { background: #181c24; }
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
 
 :root {
   --bg: #181c24;
@@ -18,8 +18,8 @@ html { background: #181c24; }
   --text: #c8d6c8;
   --text-muted: #6b7a8d;
   --tag-bg: #252d3a;
-  --font-mono: 'JetBrains Mono', monospace;
-  --font-sans: 'Inter', sans-serif;
+  --font-mono: monospace;
+  --font-sans: sans-serif;
 }
 
 body {
@@ -69,29 +69,12 @@ header p {
 }
 
 .filters-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 1rem;
 }
 
 .filters-header h2 {
   font-family: var(--font-mono);
   font-size: 1rem;
-}
-
-#reset-btn {
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-#reset-btn:hover {
-  color: var(--primary);
 }
 
 .filter-group {
@@ -103,26 +86,6 @@ header p {
   font-size: 0.85rem;
   color: var(--primary);
   margin-bottom: 0.5rem;
-}
-
-.filter-group label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  padding: 0.15rem 0;
-  transition: color 0.2s;
-}
-
-.filter-group label:hover {
-  color: var(--primary);
-}
-
-.filter-group input[type="radio"] {
-  accent-color: var(--primary);
-  width: 16px;
-  height: 16px;
 }
 
 /* ===== Detail Page ===== */
@@ -188,30 +151,6 @@ header p {
   object-fit: cover;
   display: block;
 }
-
-/*.detail-screenshot.no-screenshot::before {*/
-/*  content: "[ Desktop Screenshot ]";*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  font-family: var(--font-mono);*/
-/*  color: var(--text-muted);*/
-/*  font-size: 1rem;*/
-/*}*/
-
-/*.screenshot-label {*/
-/*  position: absolute;*/
-/*  bottom: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  padding: 0.4rem 0.75rem;*/
-/*  background: rgba(0,0,0,0.6);*/
-/*  font-family: var(--font-mono);*/
-/*  font-size: 0.75rem;*/
-/*  color: var(--text-muted);*/
-/*}*/
 
 .detail-body {
   padding: 1.5rem;
@@ -398,17 +337,7 @@ header p {
   font-family: var(--font-mono);
 }
 
-/* ===== Responsive ===== */
-/*@media (max-width: 768px) {*/
-/*  .container {*/
-/*    flex-direction: column;*/
-/*  }*/
-/*  .filters {*/
-/*    width: 100%;*/
-/*  }*/
-/*}*/
-
-/* ===== Filter Links (replaces radio buttons) ===== */
+/* ===== Filter Links ===== */
 .filter-link {
   display: block;
   font-family: var(--font-mono);
