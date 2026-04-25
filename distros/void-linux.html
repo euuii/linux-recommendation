@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Void Linux, Linux Distro Finder</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>$ Linux Distro Recommendation</h1>
+    <p>Find the perfect Linux distribution for your needs</p>
+  </header>
+
+  <div class="detail-container">
+    <a href="../index.html" class="back-btn">← Back to Finder</a>
+
+    <div class="detail-card">
+      <!-- Header -->
+      <div class="detail-header">
+        <img class="detail-logo" src="../logos/void-linux.svg" alt="Void Linux logo" />
+        <div>
+          <h2>Void Linux</h2>
+          <div class="tags">
+            <span class="tag">advanced</span>
+            <span class="tag">rolling</span>
+            <span class="tag">general</span>
+            <span class="tag">low-end</span>
+            <span class="tag tag--base">based on: independent</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Screenshot -->
+      <div class="detail-screenshot">
+        <img src="desktop/void-linux.png" alt="Void Linux Desktop" />
+      </div>
+
+      <!-- Body -->
+      <div class="detail-body">
+        <p class="detail-description">
+          Void Linux is a fully independent rolling distro that deliberately avoids systemd, using runit as its init system instead. It has its own package manager (XBPS), its own build system, and is not derived from any other distro. It's a lean, no-nonsense choice for advanced users who want something outside the Debian/Arch/Fedora mainstream.
+        </p>
+
+        <div class="detail-specs">
+          <div class="spec-item">
+            <span class="spec-label">Desktop Environment</span>
+            <span class="spec-value">User's choice</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Package Manager</span>
+            <span class="spec-value">XBPS</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Latest Release</span>
+            <span class="spec-value">Rolling</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Init System</span>
+            <span class="spec-value">runit</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Support Cycle</span>
+            <span class="spec-value">Rolling</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Architecture</span>
+            <span class="spec-value">x86_64, i686, ARM, musl variants</span>
+          </div>
+        </div>
+
+        <h3>Key Features</h3>
+        <ul class="feature-list">
+          <li>runit init system, extremely simple, fast boot, easy to understand</li>
+          <li>XBPS, a fast, unique package manager not found anywhere else</li>
+          <li>musl libc variant available for an even lighter system footprint</li>
+          <li>Completely independent, not based on Debian, Arch, or Fedora</li>
+          <li>No systemd, great for learning alternative init systems</li>
+          <li>Runs well on older and low-spec hardware</li>
+        </ul>
+
+        <a href="https://voidlinux.org" target="_blank" rel="noopener noreferrer" class="website-btn">
+          Visit Official Website →
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
