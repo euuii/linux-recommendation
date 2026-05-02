@@ -26,6 +26,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
+  font-size: 17px;
   line-height: 1.6;
   overflow: hidden;
   height: 100vh;
@@ -49,7 +50,7 @@ header h1 {
 
 header p {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
@@ -93,7 +94,8 @@ header p {
 
 .filter-group h3 {
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
@@ -267,23 +269,24 @@ header p {
 .distro-card-header {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .distro-logo {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   flex-shrink: 0;
 }
 
 .distro-card h3 {
   font-family: var(--font-mono);
   color: var(--primary);
-  font-size: 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.3;
 }
 
 .distro-card p {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--text-muted);
   flex: 1;
 }
@@ -298,7 +301,7 @@ header p {
   background: var(--tag-bg);
   color: var(--text);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
 }
@@ -314,7 +317,7 @@ header p {
   background: var(--primary);
   color: var(--bg);
   font-family: var(--font-mono);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -332,7 +335,8 @@ header p {
 .filter-link {
   display: block;
   font-family: var(--font-mono);
-  font-size: 0.875rem;
+  font-weight: 500;
+  font-size: 1rem;
   color: var(--text-muted);
   text-decoration: none;
   padding: 0.2rem 0;
@@ -341,6 +345,12 @@ header p {
 
 .filter-link:hover {
   color: var(--primary);
+}
+
+.filter-link.active {
+  color: var(--primary);
+  border-left: 2px solid var(--primary);
+  padding-left: 0.5rem;
 }
 
 /*  Scrolbar */
